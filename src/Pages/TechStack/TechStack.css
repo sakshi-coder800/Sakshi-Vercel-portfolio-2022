@@ -1,0 +1,135 @@
+.techstack {
+    padding: 45px 0;
+    margin: 65px 0; overflow: hidden;
+}
+
+.techstack hr {
+    /* background: rgb(19, 135, 129); */
+    background: #13B781;
+    width: 250px;
+    margin: 10px auto;
+    border-width: 2px;
+}
+
+.techstack h2 {
+    font-weight: bold;
+    color: #19825f;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.techstack p {
+    text-align: center;padding: .5rem 0;
+}
+
+.techstack .card {
+    cursor: pointer;
+}
+
+.techstack .tech-icon {
+    font-size: 2rem;
+    margin-right: 10px;
+    color: rgb(19, 135, 129);
+}
+.techstack .tech-icon {
+    color: rgb(19, 135, 129);
+}
+.techstack .card:hover .tech-icon {
+    color :#fff
+}
+.techstack .card:hover {
+    background-color: rgb(19, 135, 129);
+    color: #fff;
+    border: transparent;
+    transition: .5s ease  ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    ;
+}
+
+/* Media query  */
+@media (max-width :600px) {
+    .techstack h2 {
+        font-size: 1.7rem;
+    }
+/* .tech-col{  */
+    /* width: 80%; */
+    /* margin: 0 auto; */
+/* } */
+.card-content{
+    margin: 0 auto;
+}
+
+
+.tech-stack-div {
+    padding-left: 0px;
+    width: 85% !important;
+    margin: 0 auto !important;
+}
+}
+
+
+/* DArk mode  */
+#dark .techstack hr {
+    background: rgb(245 186 13);
+}
+
+#dark .techstack h2 {
+    color: rgb(245 186 13);
+}
+
+#dark .techstack .tech-icon {
+    color: rgb(245 186 13);
+}
+#dark .techstack .tech-icon {
+    color: rgb(245 186 13);
+}
+#dark .techstack .card:hover .tech-icon {
+    color: #000;
+    /* font-size: 2.5rem; */
+}
+#dark .techstack .card:hover {
+    /* background-color: rgb(19, 135, 129); */
+    background-color: rgb(245 186 13);
+    color: #000;
+}
+#dark .techstack p{
+    color: rgb(245 186 13);
+}
+
+#dark .techstack hr {
+    /* background: rgb(19, 135, 129); */
+    background-color: rgb(245 186 13);
+
+    width: 250px;
+    margin: 10px auto;
+    border-width: 2px;
+}
+
+
+
+
+@media screen and  (max-width :320px) {
+    .techstack h2 {
+        font-size: 1.5rem;
+    } 
+    /* use for all  */
+    .techstack {
+        padding: 0 10px !important;
+    }
+    
+    .techstack p {
+        padding: 0rem 0;
+    }
+    
+}
+
+@media only screen and (min-width: 901px) {
+    .tech-col {
+        margin: 0;
+        padding: 0;
+    }
+    .tech-body  h5 {
+        font-size: 1.1rem;
+    }
+  }

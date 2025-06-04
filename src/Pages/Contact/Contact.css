@@ -1,0 +1,206 @@
+.contact {
+    margin-bottom: 60px;
+    /* padding-top: 50px; */
+    overflow: hidden;
+}
+ .border-line img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.border-line {
+    border-right: 1px solid rgb(19, 135, 129);
+}
+
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #e0e0e0;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 35px 0;
+}
+
+.socialLinks li a svg {
+    background: rgb(19, 135, 129);
+    color: #fff;
+    padding: 6px;
+    font-size: 30px;
+    border-radius: 100%;
+     transition:all  .3s ;
+}
+
+.socialLinks li a svg:hover {
+    background-color: #233d34; 
+}
+.socialLinks li a span {
+    color: rgb(19, 135, 129);
+    font-size: 20px;
+    transition:all  .3s ;
+    margin: 0 0 0 12px;
+    font-weight: 600;
+}
+
+.socialLinks li a span:hover {
+ color: #233d34;
+}
+
+.socialLinks li {
+    padding: 5px 0;
+}
+
+#contact .card{
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: .4s ease;
+}
+#contact.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+
+
+/* MediaQuery  */
+@media (max-width :600px) {
+    .contact {
+        overflow: hidden;
+        padding: 0;
+        margin: 0;
+    }
+    .border-line {
+        border-right: none ;
+    }
+    .border-line img {
+        height: 200px;
+        padding: 0;
+    }
+    .contact-2{padding: 1rem 0 2rem 0;}
+    /* #contact .card {
+        box-shadow: none;
+    } */
+    #contact .card {
+        box-shadow: none;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 95%;
+    }
+    .socialLinks {
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        width: 90%;
+        margin: 0 auto;
+    }
+   .socialLinks li a span {
+    font-size: 1rem;
+    margin: 0 .4rem;
+}
+
+}
+
+
+/* dark mode  */
+#dark #contact .card {
+    /* background-color: transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    transition: .4s ease;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden; */
+}
+
+
+#dark #contact .card{
+background-color: transparent;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+ #dark .socialLinks li a svg:hover {
+    background-color: rgb(236, 206, 113); 
+}
+ #dark .socialLinks li a span {
+    color:rgb(245 186 13);
+    font-size: 20px;
+    transition:all  .3s ;
+    margin: 0 0 0 12px;
+    font-weight: 600;
+}
+
+ #dark .socialLinks li a span:hover {
+ color: rgb(236, 206, 113);
+}
+
+#dark .socialLinks li a svg {
+    background: rgb(245 186 13);
+    color: #000;
+    padding: 6px;
+    font-size: 30px;
+    border-radius: 100%;
+     transition:all  .3s ;
+}
+
+#dark .socialLinks li a svg:hover {
+    background-color: rgb(236, 206, 113); 
+    color: #000 ;
+}
+#dark .border-line {
+    border-right: 1px solid rgb(253 199 38 );
+}
+
+ #dark #contact.card:hover{
+    /* box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 2.6px; */
+    box-shadow: rgb(237 237 237 / 47%) 1.95px 1.95px 2.6px;
+
+
+}
+
+#dark #contact .card {
+    border-radius: 4px;
+    box-shadow: rgb(237 237 237 / 0%) 1.95px 1.95px 2.6px;
+    background: transparent;
+    transition: all .4s;
+}
+
+@media screen and  (max-width :320px) {
+    #dark .socialLinks li a span {
+        font-size: 1rem;
+    }
+    #dark .socialLinks li a svg {
+        padding: 4px;
+        font-size: 25px;
+    }
+    .socialLinks {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    ul.socialLinks {
+        margin: 0;
+        padding: 0;
+        margin: 2rem 0 0 0;
+    }
+    
+    .socialLinks li a span {
+        color: rgb(19, 135, 129);
+        font-size: 1.2rem;
+        transition: all  .3s;
+        margin: 0;
+        font-weight: 600;
+    }
+  }
+
+
+  
+@media only screen and (min-width: 901px) {
+    .container, .container-md, .container-sm {
+        max-width: 740px;
+    }
+  }
+

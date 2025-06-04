@@ -1,0 +1,131 @@
+.workexp {
+    padding: 45px 0;
+    margin: 65px 0 100px 0;
+    /* background-color: rgb(225, 225, 225); */
+    background-color: rgb(249 248 248);
+    overflow: hidden;
+}
+
+.workexp hr {
+    background: #2d9471;
+    width: 250px;
+    margin: 10px auto;
+    border-width: 2px;
+}
+
+
+.workexp h2 {
+    font-weight: bold;
+    color: #2d9471;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+.workexp p {
+    text-align: center;
+}
+
+.workexp .vertical-timeline-element-title {
+    color: rgb(19, 135, 129);
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.workexp .vertical-timeline-element-subtitle {
+    color: #1e1e2c78;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+
+/* Media Query  */
+
+@media (max-width :600px) {
+
+
+    .workexp h2 {
+        font-size: 1.7rem;
+    }
+    .vertical-timeline::before{
+        display: none;
+    }
+    
+    .vertical-timeline {
+    padding: 1rem 0 !important;
+    }
+    .vertical-timeline-element-content-arrow {
+        content: '';
+        display: none;
+    }
+    .workexp .vertical-timeline-element-title {
+        font-size: 1.6rem;
+    }
+    .workexp .vertical-timeline-element-subtitle {
+        font-size: 1.2rem;
+    }
+    .vertical-timeline-element-content .vertical-timeline-element-date {
+        opacity: 1;
+        float: right;
+        padding: .3rem 0;
+    }
+    }
+
+
+    /* dark mode theme  */
+   #dark .workexp {
+        padding: 45px 0;
+        margin: 65px 0 100px 5px;
+        background-color: #212020;
+        overflow: hidden;
+    }
+
+     #dark .workexp hr {
+        background: rgb(245 186 13);
+    }
+    
+     #dark .workexp h2 {
+        color: rgb(245 186 13);
+    }
+    
+   #dark .workexp .vertical-timeline-element-title {
+        color: rgb(245 186 13);
+    }
+    #dark .vertical-timeline-element-content {
+        background: #323232 !important;
+        color: rgb(245 186 13);
+        box-shadow: none;
+    }
+   #dark  .vertical-timeline-element-icon svg {
+        color: #000;
+    }
+    #dark span.vertical-timeline-element-icon.bounce-in {
+        background: rgb(245 186 13) !important;
+
+    }
+   #dark .workexp .vertical-timeline-element-subtitle {
+        color: rgb(253 199 38 / 85%);
+        font-size: 1rem !important;
+    }
+    #dark   .vertical-timeline-element-content .vertical-timeline-element-date {
+        opacity: 1;
+        float: right;
+        padding: .3rem 0;
+        color: rgb(253 199 38 ) !important;
+    }
+    #dark .vertical-timeline-element-content-arrow {
+        border-right: 7px solid rgb(253 199 38 ) !important;
+    }
+    #dark  .vertical-timeline::before {
+        background: rgb(253 199 38 );
+    }
+  
+    #dark .workexp hr {
+    background-color: rgb(253 199 38 ) !important;
+        width: 250px;
+        margin: 10px auto;
+        border-width: 2px;
+    }
+    

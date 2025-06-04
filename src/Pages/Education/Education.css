@@ -1,0 +1,128 @@
+.education {
+    padding: 45px 0;
+    margin: 65px 0;
+    background-color: rgb(249 248 248);
+}
+
+.education hr {
+    background: #2d9471;
+    width: 250px;
+    margin: 10px auto;
+    border-width: 2px;
+}
+
+.education h2 {
+    font-weight: bold;
+    color: #2d9471;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+
+
+.education p {
+    text-align: center;
+}
+
+.education .vertical-timeline-element-title {
+    color: #19825f;
+}
+
+.education .vertical-timeline-element-subtitle {
+    color: #1e1e1e80;
+}
+
+.vertical-timeline-element-date {
+    color: #19825f !important;
+}
+
+
+@media (max-width :600px) {
+
+
+.education h2 {
+    font-size: 1.7rem;
+}
+.vertical-timeline::before{
+    display: none;
+}
+
+.vertical-timeline {
+padding: 1rem 0 !important;
+}
+.vertical-timeline-element-content-arrow {
+    content: '';
+    display: none;
+}
+.education .vertical-timeline-element-title {
+    font-size: 1.6rem;
+}
+.education .vertical-timeline-element-subtitle {
+    font-size: 1.2rem;
+}
+.vertical-timeline-element-content .vertical-timeline-element-date {
+    opacity: 1;
+    float: right;
+    padding: .3rem 0;
+}
+}
+
+
+
+   /* dark mode theme  */
+   #dark .education {
+    padding: 45px 0;
+    margin: 65px 0 100px 5px;
+    background-color: #212020;
+    overflow: hidden;
+}
+
+ #dark .education hr {
+    background: rgb(245 186 13);
+}
+
+ #dark .education h2 {
+    color: rgb(245 186 13);
+}
+
+#dark .education .vertical-timeline-element-title {
+    color: rgb(245 186 13);
+}
+#dark .vertical-timeline-element-content {
+    background: #323232 !important;
+    color: rgb(245 186 13);
+    box-shadow: none;
+}
+#dark  .vertical-timeline-element-icon svg {
+    color: #000;
+}
+#dark span.vertical-timeline-element-icon.bounce-in {
+    background: rgb(245 186 13) !important;
+
+}
+#dark .education .vertical-timeline-element-subtitle {
+    color: rgb(253 199 38 / 85%);
+    font-size: 1rem !important;
+}
+#dark   .vertical-timeline-element-content .vertical-timeline-element-date {
+    opacity: 1;
+    float: right;
+    padding: .3rem 0;
+    color: rgb(253 199 38 ) !important;
+}
+#dark .vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgb(253 199 38 ) !important;
+}
+#dark  .vertical-timeline::before {
+        background: rgb(253 199 38 );
+    }
+   
+    #dark .education hr {
+        /* background: #2d9471; */
+    background-color: rgb(253 199 38 ) !important;
+        width: 250px;
+        margin: 10px auto;
+        border-width: 2px;
+    }
+    

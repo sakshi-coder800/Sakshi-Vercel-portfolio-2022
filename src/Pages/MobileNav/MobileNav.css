@@ -1,0 +1,113 @@
+@media (min-width:600px) {
+    .mobile-nav {
+        display: none;
+    }
+
+}
+
+.mobile-nav {
+    overflow: hii;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* .mobile-nav-header {
+    height: 50px;
+    width: 100%;
+    padding: 8px;
+    background-color: #1e1e1e;
+} */
+
+.mobile-nav-header {
+    height: 70px;
+    width: 100%;
+    padding: 8px;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .mobile-nav-title {
+    margin-left: 20px;
+    color: rgb(19, 135, 129);
+    font-weight: bold;
+    text-transform: capitalize;
+    vertical-align: middle;
+    font-size: 20px;
+} */
+.mobile-nav-header svg {
+    color: rgb(35 229 218) !important;
+    margin: 0 0 0 1rem;
+}
+.mobile-nav-title {
+    margin-left: 20px;
+    color: rgb(35 229 218);
+    font-weight: bold;
+    text-transform: capitalize;
+    vertical-align: middle;
+    font-size: 20px;
+    float: right;
+    padding: 0 1rem 0 0;
+}
+
+
+.mobile-nav-icon {
+    color: #fff !important;
+    cursor: pointer;
+}
+#mobile-nav-menu .nav-items {
+    height: fit-content;
+    width: 250px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    margin-top: 10px;
+    padding-bottom: 0;
+    border-bottom-right-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+#mobile-nav-menu .nav-items .nav-item {
+    color: #ffff;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0;
+    border-bottom: 2px solid #ff685f1c;
+    /* padding: 5px 0; */
+    padding: .7rem  0;
+
+}
+
+
+#mobile-nav-menu .nav-items .nav-item .nav-link {
+    /* margin-top: 20px; */
+    cursor: pointer;
+}
+
+
+/* dark mode   */
+ #dark .mobile-nav-title {
+    color: rgb(245 186 13);
+}
+#dark .mobile-nav-header svg {
+    color: rgb(245 186 13) !important;
+    margin: 0 0 0 1rem;
+}
+#dark 
+#mobile-nav-menu .nav-items .nav-item {
+    color: #ffff;
+    margin-top: 0;
+    text-align: left;
+    margin-left: 0;
+    border-bottom: 2px solid rgba(238, 199, 84, 0.192) ;
+    padding: .7rem  0;
+}
+@media screen and  (max-width :320px) {
+    #mobile-nav-menu .nav-items {
+        width: 235px;
+    }
+}

@@ -1,0 +1,130 @@
+.home-container {
+    height: 300px;
+    color: #fff;
+    background-color: #000;
+}
+
+.home-container h2 {
+    padding: 10px;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.home-container h1 {
+    color: rgb(32 225 215);
+    padding: 5px 0 20px 0;
+}
+.home-buttons .btn-hire {
+    background-color: rgb(19, 135, 129);
+    color: #fff;
+    width: 160px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.home-buttons .btn-hire:hover {
+    background-color: rgb(19, 135, 129) ;
+    /* border-bottom: 2px solid ; */
+
+    color: #fff;
+    width: 200px;
+    transition: 1s ease;
+}
+
+.home-buttons .btn-cv {
+    margin-left: 10px;
+    background-color: #f29f67;
+    color: #fff;
+    font-size:1.2rem;
+}
+
+.home-buttons .btn-cv:hover {
+    /* transition: 1s ease; */
+    opacity: 80%;
+}
+
+.theme-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    background-color: #1e1e1e;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    z-index: 1;
+
+
+
+}
+
+
+
+
+
+
+/* ======================= Responsive Page  =======================*/
+@media (max-width :600px) {
+    #dark .home-container {
+        height: 360px;
+    }
+    .home-container {
+        height: 450px;
+        color: #fff;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding:  0 0 0 2rem !important;text-align: center;
+    }
+    .home-container h2 {
+        padding-top: 0;
+    }
+    .home-container h1 { 
+        color: rgb(32 225 215);
+        padding: 0;
+        font-size: 1.8rem;
+        padding: 0 0 1rem 0;
+    }
+    .home-buttons .btn-hire {
+        font-size: 1rem; width: 120px;
+    }
+    .home-buttons .btn-cv {
+        font-size: 1rem;width: 120px;
+    }
+    .theme-btn{
+        position: fixed;
+        top: 3rem;
+        right: 0;
+    }
+}
+
+
+/* Dark mode  */
+
+#dark .home-container h1{
+    color: rgb(245 186 13);
+}
+
+
+@media screen and  (max-width :320px) {
+
+    .home-container {
+        height: 310px;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 901px) {
+    /* Your CSS rules for large screens go here */
+    body{
+    }
+  }

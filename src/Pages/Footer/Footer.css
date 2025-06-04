@@ -1,0 +1,23 @@
+footer {
+    background-color: #1e1e2c;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0 5px 0;
+    margin-bottom: 0;
+}
+.addColor{
+    color:rgb(19, 135, 129) ;
+}
+
+
+@media (max-width: 600px) {
+    footer {
+font-size: 1rem;
+    }
+  }
+
+
+  /* dark theme   */
+  #dark footer .addColor {
+    color: rgb(245 186 13);
+  }

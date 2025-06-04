@@ -1,0 +1,314 @@
+node js 
+Vs Code 
+    node -v 
+    npm -v 
+
+VS CODE EXTENSION :-
+-------------------
+        1. Auto close Tag 
+        2. ES7 React Redux/RReact-Native snippe 
+        3. html to JSX
+        4. Material Icon Theme 
+        5. Path Intellisense 
+        6. Prettier- code formatter 
+        7. Auto Import
+
+Components :-
+--------------
+    About 
+    Contact 
+    Education 
+    Footer 
+    Home  
+    Layout 
+    Menu 
+    MobileNav 
+    Projects 
+    TechStack 
+    WorkExp 
+
+Utilis :- 
+----------
+    TechStackList (use for add all details related to your tech skills )
+
+
+ASstes :-
+---------
+    Add images 
+    Pdf files 
+
+Add Bootstrap CDN Link
+npm i bootstrap
+
+==================================================================================================================================================================
+Step 1:- 
+Create Components 
+layout/layout.js 
+  Npm i react-icons (use for react icons )
+Step 2:-
+Menu.js
+Step 3:- 
+Home Page
+(npm i typewriter-effect) - use for add typing effect in text
+Step 4:- 
+About.js
+Step 5 :- 
+techStack.js
+Step 6 :- 
+project.js
+Step 7 :- 
+Education.js
+  npm i react-vertical-timeline-component (use this and also follow the guidence for use )
+Step 8 :- 
+Contact Form and Footer page
+Step 9 :-
+add animation and effects 
+1. npm i scroll-to-top (use for add scroll to top)
+
+
+scroll and target link by menu 
+npm i react-scroll 
+
+Step 10 :- enable light dark theme functionality
+  create a custom hooks 
+  // create a custom hooks 
+// context  has been add 
+// Now we can use this anywhere
+// after adding 'index.js' 
+//               your themen context global state hs been created 
+//
+//
+//
+
+
+import { useState, createContext, useContext } from "react";
+const ThemeContext = createContext();
+const ThemeProvider = ({ children }) => { // global bnana h to props pass kr rhe h 
+    const [theme, setTheme] = useState('light');
+    return (
+        <ThemeContext.Provider value={[theme, setTheme]}>
+            {children}
+        </ThemeContext.Provider>
+    )
+}
+// custom hook
+const useTheme = () => useContext(ThemeContext);
+export { useTheme, ThemeProvider };
+
+
+
+Step 10.1 :- wrap <ThemeProvider> in index.js file then add this in app.js 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npx create-react-app Shakshi
+EXTENSION :-
+    Auto Close Tag
+    ES7+React/Redux/React Native snippe
+html to JSX
+MAterial Icon Theme
+PAth Intellisense
+Prettier -Code formatter
+Auto import 
+
+
+3. USe bootstrap cdn and paste it in 
+index.html file
+
+4.  Layout 
+
+5. use toogle use state
+        const[toggle,setToggle]=useState(false);
+        // change toggle
+        const handleToggle=()=>{
+            setToggle(!toggle);
+        }
+        (add this on toggle button click )
+
+6. Create side bar for desktop screen
+Menu.js /menu.css
+(import ""toggle "" as a props in menu file by using ""layout file )
+create 2 menus for toggle according
+
+7. Home section 
+
+    npm i typewriter-effect
+    apply this using documentation (npmjs.com)
+    add buttons and move to next section
+
+
+8. About US page section
+    show image and name
+
+9. Tech TechStack 
+    Show all Technical skills in it 
+    create a utility file (they contain all data related to your tech skills)
+
+    techStack.js (import this util file and use arr.map for access all values)
+
+10. create project section and show all your projeccts
+
+
+
+11. Education & Work Experience 
+npm i react-vertical-timeline-component (use for create these section )
+
+
+12. Contact and Footer Section 
+
+13. Scroll Effect and Link Container
+
+    npm i react-scroll-to-top
+    import this in app.js file and use this in app.js at the end of the function 
+
+14. npm i react-scroll 
+import {Link} from react-scroll
+    (add effect in menu for auto scrolling section )
+
+
+
+    <Link activeClass="active" to="home_id_name" spy={true} smooth={true} offset={-100} duration={100}>Home </Link> (this is one link )
+
+
+15. Light and Dark Mode (for this we are using contenxt api)
+
+
+
+create a file 
+context/ThemeContext.js
+import {useState,createContext,useContext} from 'react;
+
+// create custom hook
+const ThemeContext= createContext();
+
+// ThemeProvider
+
+const ThemeProvider=({children})=>{
+    const[theme,setTheme]=useState('light);
+    return (
+        <ThemeContext.Provider value={[theme,setTheme]}>{children}</ThemeContext.Provider>
+    )
+}
+
+// custom hooks
+const useTheme=()=>useContext(ThemeContext);
+
+export {useTheme,ThemeProvider};
+
+
+
+
+---- after creating context api wrap ThemeProvider by index.js 
+imp {ThemeProvider} from './contenxt/ThemeContext';
+        <ThemeProvider>
+        <app/>
+        </ThemeProvider>
+
+
+        now u are ablue to use this theme in your website globally 
+
+
+import {useTheme} in Home.js 
+
+const[theme.setTheme]=useTheme();
+// handle theme
+const themeHandle=()=>{
+    setTheme((prevState)=> {prevState==="light" ? 'dark' : 'light'})
+}
+
+//create a theme button
+div.theme-btn onclick={themeHandle}> 
+{theme === 'light ? <show sun icon > : <show moon icon>} 
+
+
+
+in app.js (wrap all content by theme )
+
+imp {useTheme} from 'ThemeContext;
+
+const[theme]=useTheme();
+<div id={theme}>
+.
+.
+.
+.
+</div>
+
+
+/* DARK mode */
+#dark {background :red}
+
+
+16. Animation Effect
+    npm i react-reveal
+    www.react-reveal.com (use for add animation effect)
+
+import  Zoom from 'react-reveal/Zoom';
+    <Zoom>
+
+
+    </Zoom>
+
+
+17. Responsive navbar
+Hide navbar for (max-width :600px)
+Hide mobile nav for (min-width :600px)
+
+
+
+
+create mobile navbar 
+
+
+    const [open ,setOpen]=useState(false);
+    // handle open 
+    const handleOpen=()=>{
+        setOpen(!open);
+    }
+    // close navbar when we click on the menu 
+    // call this in all button as a onclick
+    close handleMenuClick=()=>{
+        setOpen(false);
+    }
+
+
+//add this on button click 
+{open ? <show diff icon onclick={handleOpen}> : <show 2nd diff icon  onclick={handleOpen}>}
